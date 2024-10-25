@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
             unselectedItemColor: Colors.white54,
             items: const [
               BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.house_alt), label: 'Home'),
+                  icon: Icon(CupertinoIcons.house_alt_fill), label: 'Home'),
               BottomNavigationBarItem(
                   icon: Icon(CupertinoIcons.graph_square_fill), label: 'Trends'),
               BottomNavigationBarItem(
@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           child: const Icon(
-            CupertinoIcons.add,
+            CupertinoIcons.add_circled_solid,
           ),
         ),
       ),
