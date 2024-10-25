@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(90)),
+        borderRadius: const BorderRadius.vertical(top: const Radius.circular(100)),
         child: BottomNavigationBar(
             backgroundColor: Colors.white, // Set background color to white
             showSelectedLabels: false,
