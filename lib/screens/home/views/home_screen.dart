@@ -8,18 +8,19 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Colors.white,  // Set background color to white
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.house_alt),
-            label: 'Home'
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.graph_square_fill),
-            label: 'Stats'
-          ),
-        ]
+      bottomNavigationBar: ClipRRect(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(90)),
+        child: BottomNavigationBar(
+            backgroundColor: Colors.white, // Set background color to white
+            showSelectedLabels: false,
+            showUnselectedLabels: false,
+            elevation: 3,
+            items: const [
+              BottomNavigationBarItem(
+                  icon: Icon(CupertinoIcons.house_alt), label: 'Home'),
+              BottomNavigationBarItem(
+                  icon: Icon(CupertinoIcons.graph_square_fill), label: 'Stats'),
+            ]),
       ),
     );
   }
