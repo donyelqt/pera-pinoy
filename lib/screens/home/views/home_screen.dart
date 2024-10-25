@@ -9,9 +9,10 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Colors.white,  // Set background color to white
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
+            icon: Icon(CupertinoIcons.house_alt),
             label: 'Home'
           ),
           BottomNavigationBarItem(
