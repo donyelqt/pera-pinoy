@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       bottomNavigationBar: ClipRRect(
-        borderRadius: const BorderRadius.vertical(top: const Radius.circular(100)),
+        borderRadius: const BorderRadius.vertical(top: const Radius.circular(100)), // border radius vertical
         child: BottomNavigationBar(
             backgroundColor: Colors.white, // Set background color to white
             showSelectedLabels: false,
@@ -22,6 +22,8 @@ class HomeScreen extends StatelessWidget {
                   icon: Icon(CupertinoIcons.graph_square_fill), label: 'Stats'),
             ]),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: FloatingActionButton(onPressed: () {}),
     );
   }
 }

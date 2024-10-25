@@ -12,9 +12,9 @@ class MyAppView extends StatelessWidget {
       title: "PeraPinoy",
       theme: ThemeData(
         colorScheme: ColorScheme.light(
-          surface: Colors.orange.shade400,
+          surface: Colors.orange.shade300,
           onSurface: Colors.black,
-          primary: const Color.fromARGB(255, 231, 158, 0),
+          primary: const Color.fromARGB(255, 255, 0, 0), // fromARGB(255, 231, 158, 0)
           secondary: const Color.fromARGB(255, 231, 0, 0),
           tertiary: const Color.fromARGB(255, 231, 204, 0)
         )
