@@ -44,8 +44,8 @@ class HomeScreen extends StatelessWidget {
                   icon: Icon(CupertinoIcons.bolt_circle_fill),
                   label: 'PeraPinoyGPT'),
               BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.graph_square_fill),
-                  label: 'Trends'),
+                  icon: Icon(CupertinoIcons.waveform_path),
+                  label: 'Forecast'),
               BottomNavigationBarItem(
                   icon: Icon(CupertinoIcons.square_grid_2x2_fill),
                   label: 'Others'),
