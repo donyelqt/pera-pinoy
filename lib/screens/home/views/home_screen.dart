@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(100)),
+        borderRadius: BorderRadius.vertical(top: Radius.circular(10)),
         child: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -28,14 +28,24 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
           child: BottomNavigationBar(
-            backgroundColor: Colors.transparent,
+            backgroundColor:
+                Colors.transparent, // Transparent so gradient shows
             selectedItemColor: Colors.white,
             unselectedItemColor: Colors.white54,
+            type: BottomNavigationBarType.fixed, // Correct placement
             items: const [
               BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.house_alt_fill), label: 'Home'),
+                  icon: Icon(CupertinoIcons.house_alt_fill), 
+                  label: 'Home'),
               BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.graph_square_fill), label: 'Trends'),
+                  icon: Icon(CupertinoIcons.graph_square_fill),
+                  label: 'Trends'),
+              BottomNavigationBarItem(
+                  icon: Icon(CupertinoIcons.bolt_circle_fill),
+                  label: 'PeraPinoyGPT'),
+              BottomNavigationBarItem(
+                  icon: Icon(CupertinoIcons.graph_square_fill),
+                  label: 'Trends'),
               BottomNavigationBarItem(
                   icon: Icon(CupertinoIcons.square_grid_2x2_fill),
                   label: 'Others'),
@@ -52,7 +62,7 @@ class HomeScreen extends StatelessWidget {
           height: 60,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient:   RadialGradient(
+            gradient: RadialGradient(
               colors: [
                 Theme.of(context).colorScheme.primary,
                 Theme.of(context).colorScheme.secondary,
