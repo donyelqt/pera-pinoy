@@ -11,10 +11,10 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(10)),
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(60)),
         child: Container(
           decoration: BoxDecoration(
-            gradient: LinearGradient(
+            gradient: const LinearGradient(
               colors: [Colors.redAccent, Colors.red],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                   label: 'Trends'),
               BottomNavigationBarItem(
                   icon: Icon(CupertinoIcons.bolt_circle_fill),
-                  label: 'PeraPinoyGPT'),
+                  label: 'GPT'),
               BottomNavigationBarItem(
                   icon: Icon(CupertinoIcons.waveform_path),
                   label: 'Forecast'),
