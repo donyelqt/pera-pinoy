@@ -33,20 +33,28 @@ class HomeScreen extends StatelessWidget {
                 Colors.transparent, // Transparent so gradient shows
             selectedItemColor: Colors.white,
             unselectedItemColor: Colors.white54,
-            type: BottomNavigationBarType.fixed, // Correct placement
+            type: BottomNavigationBarType.fixed,
+            iconSize: 20.0,
+            selectedLabelStyle: TextStyle(
+              fontSize: 12.0, // Customize the text size for the selected label
+              fontWeight:
+                  FontWeight.bold, // You can also customize other properties
+            ),
+            unselectedLabelStyle: TextStyle(
+              fontSize:
+                  12.0, // Customize the text size for the unselected label
+              fontWeight: FontWeight.normal,
+            ), // Correct placement
             items: const [
               BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.house_alt_fill), 
-                  label: 'Home'),
+                  icon: Icon(CupertinoIcons.house_alt_fill), label: 'Home'),
               BottomNavigationBarItem(
                   icon: Icon(CupertinoIcons.graph_square_fill),
                   label: 'Trends'),
               BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.bolt_circle_fill),
-                  label: 'GPT'),
+                  icon: Icon(CupertinoIcons.bolt_circle_fill), label: 'GPT'),
               BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.waveform_path),
-                  label: 'Forecast'),
+                  icon: Icon(CupertinoIcons.waveform_path), label: 'Forecast'),
               BottomNavigationBarItem(
                   icon: Icon(CupertinoIcons.square_grid_2x2_fill),
                   label: 'Others'),
