@@ -82,8 +82,15 @@ class MainScreen extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.width / 2,
               decoration: BoxDecoration(
-                  color: Colors.redAccent,
-                  borderRadius: BorderRadius.circular(30)),
+                gradient: LinearGradient(
+                  colors: [
+                    Theme.of(context).colorScheme.secondary,
+                    Theme.of(context).colorScheme.primary,
+                    Theme.of(context).colorScheme.tertiary,
+                  ],
+                ),
+                borderRadius: BorderRadius.circular(30),
+              ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -102,48 +109,52 @@ class MainScreen extends StatelessWidget {
                         color: Colors.white,
                         fontWeight: FontWeight.bold),
                   ),
-                  const SizedBox(height: 12),
-                  Row(
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            width: 30,
-                            height: 30,
-                            decoration: const BoxDecoration(
-                                color: Colors.white30, shape: BoxShape.circle),
-                            child: Center(
-                                child: Icon(
-                              CupertinoIcons.arrow_down,
-                              size: 14,
-                              color: Colors.greenAccent,
-                            )),
-                          ),
-                          SizedBox(
-                            width: 8,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              const Text(
-                                "Budget",
-                                style: TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                              const Text(
-                                "₱ 2000000",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.w600),
-                              ),
-                            ],
-                          )
-                        ],
-                      )
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 12, horizontal: 20),
+                    child: Row(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              width: 30,
+                              height: 30,
+                              decoration: const BoxDecoration(
+                                  color: Colors.white30,
+                                  shape: BoxShape.circle),
+                              child: Center(
+                                  child: Icon(
+                                CupertinoIcons.arrow_down,
+                                size: 14,
+                                color: Colors.greenAccent,
+                              )),
+                            ),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text(
+                                  "Budget",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                                const Text(
+                                  "₱ 2000000",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w600),
+                                ),
+                              ],
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
