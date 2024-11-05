@@ -110,11 +110,11 @@ class MainScreen extends StatelessWidget {
                         fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 12),
-                  const Text(
+                  Text(
                     "\₱ 1500000",
                     style: TextStyle(
                         fontSize: 35,
-                        color: Colors.white,
+                        color: Colors.yellow.shade700,
                         fontWeight: FontWeight.bold),
                   ),
                   Padding(
