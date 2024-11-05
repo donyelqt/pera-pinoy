@@ -47,9 +47,9 @@ class MainScreen extends StatelessWidget {
                             CrossAxisAlignment.start, // Align text to the left
                         children: [
                           Text(
-                            "Welcome to PeraPinoy!",
+                            "Welcome to PeraPinoy! 👋",
                             style: TextStyle(
-                              fontSize: 18,
+                              fontSize: 15,
                               fontWeight: FontWeight.w600,
                               color: Colors.white70,
                             ),
@@ -100,10 +100,12 @@ class MainScreen extends StatelessWidget {
                             child: Center(
                                 child: Icon(
                               CupertinoIcons.arrow_down,
-                              size: 12,
+                              size: 14,
                             )),
                           ),
+                          SizedBox(width: 8,),
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text(
                                 "Budget"
