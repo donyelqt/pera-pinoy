@@ -81,7 +81,7 @@ class MainScreen extends StatelessWidget {
                       onPressed: () {},
                       icon: const Icon(
                         CupertinoIcons.settings,
-                        color: Colors.orangeAccent,
+                        color: Colors.white,
                       )),
                 ],
               ),
