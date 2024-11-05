@@ -150,7 +150,7 @@ class MainScreen extends StatelessWidget {
                                       fontWeight: FontWeight.w500),
                                 ),
                                 Text(
-                                  "₱ 500000",
+                                  "\₱ 500000",
                                   style: TextStyle(
                                       fontSize: 18,
                                       color: Colors.white70,
