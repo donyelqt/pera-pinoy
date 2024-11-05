@@ -4,10 +4,19 @@ import 'package:flutter/material.dart';
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
-
-
   @override
   Widget build(BuildContext context) {
+    // Example values for budget and expenses
+    double budget = 2000000;
+    double expenses = 500000;
+
+    // Calculate the progress as a fraction of budget used
+    double progress = expenses / budget;
+
+    // Calculate the percentage of expenses as a formatted string
+    String percentage =
+        ((progress) * 100).toStringAsFixed(1); // Format to one decimal place
+
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -36,7 +45,7 @@ class MainScreen extends StatelessWidget {
                               color: Colors.red[700],
                             ),
                           ),
-                          Icon(
+                          const Icon(
                             CupertinoIcons.person_fill,
                             color: Colors.white,
                             size: 40,
@@ -44,7 +53,7 @@ class MainScreen extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(width: 8),
-                      Column(
+                      const Column(
                         crossAxisAlignment:
                             CrossAxisAlignment.start, // Align text to the left
                         children: [
@@ -70,25 +79,22 @@ class MainScreen extends StatelessWidget {
                   ),
                   IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         CupertinoIcons.settings,
                         color: Colors.orangeAccent,
                       )),
                 ],
               ),
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            const SizedBox(height: 20),
             Container(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.width / 2,
+              height: 300,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
                     Theme.of(context).colorScheme.secondary,
-                    Theme.of(context).colorScheme.onSurface, // remove primary and replace with onSurface
-                    // Theme.of(context).colorScheme.tertiary,
+                    Theme.of(context).colorScheme.onSurface,
                   ],
                 ),
                 borderRadius: BorderRadius.circular(30),
@@ -97,7 +103,7 @@ class MainScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    "Total Balanced",
+                    "Total Balance",
                     style: TextStyle(
                         fontSize: 16,
                         color: Colors.white,
@@ -107,7 +113,7 @@ class MainScreen extends StatelessWidget {
                   const Text(
                     "\₱ 1500000",
                     style: TextStyle(
-                        fontSize: 40,
+                        fontSize: 35,
                         color: Colors.white,
                         fontWeight: FontWeight.bold),
                   ),
@@ -125,28 +131,26 @@ class MainScreen extends StatelessWidget {
                               decoration: const BoxDecoration(
                                   color: Colors.white30,
                                   shape: BoxShape.circle),
-                              child: Center(
+                              child: const Center(
                                   child: Icon(
                                 CupertinoIcons.money_dollar,
                                 size: 18,
-                                color: Colors.greenAccent,
+                                color: Colors.yellowAccent,
                               )),
                             ),
-                            SizedBox(
-                              width: 8,
-                            ),
-                            Column(
+                            const SizedBox(width: 8),
+                            const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text(
-                                  "Budget",
+                                Text(
+                                  "Expenses",
                                   style: TextStyle(
                                       fontSize: 14,
                                       color: Colors.white,
                                       fontWeight: FontWeight.w500),
                                 ),
-                                const Text(
-                                  "₱ 2000000",
+                                Text(
+                                  "₱ 500000",
                                   style: TextStyle(
                                       fontSize: 18,
                                       color: Colors.white,
@@ -164,28 +168,26 @@ class MainScreen extends StatelessWidget {
                               decoration: const BoxDecoration(
                                   color: Colors.white30,
                                   shape: BoxShape.circle),
-                              child: Center(
+                              child: const Center(
                                   child: Icon(
                                 CupertinoIcons.money_dollar,
                                 size: 18,
                                 color: Colors.black,
                               )),
                             ),
-                            SizedBox(
-                              width: 8,
-                            ),
-                            Column(
+                            const SizedBox(width: 8),
+                            const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text(
-                                  "Expenses",
+                                Text(
+                                  "Budget",
                                   style: TextStyle(
                                       fontSize: 14,
                                       color: Colors.white,
                                       fontWeight: FontWeight.w500),
                                 ),
-                                const Text(
-                                  "₱ 500000",
+                                Text(
+                                  "₱ 2000000",
                                   style: TextStyle(
                                       fontSize: 18,
                                       color: Colors.white,
@@ -197,7 +199,43 @@ class MainScreen extends StatelessWidget {
                         )
                       ],
                     ),
-                  )
+                  ),
+                  const SizedBox(
+                      height:
+                          20), // Space between budget/expenses and progress bar
+                  // Progress Percentage Display
+
+                  const SizedBox(height: 8),
+                  // Linear Progress Indicator
+                  Container(
+                    width: MediaQuery.of(context).size.width *
+                        0.8, // Adjust width as needed
+                    child: Column(
+                      children: [
+                        LinearProgressIndicator(
+                          value: progress.clamp(0.0,
+                              1.0), // Ensure the value is between 0.0 and 1.0
+                          backgroundColor: Colors.white30, // Background color
+                          valueColor: const AlwaysStoppedAnimation<Color>(
+                              Colors.yellowAccent), // Progress color
+                          borderRadius: BorderRadius.circular(30),
+                          minHeight: 15, // Height of the progress bar
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(
+                              top: 12.0), // Add top margin here
+                          child: Text(
+                            "$percentage% Expensed", // Display percentage
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             )

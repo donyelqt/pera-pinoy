@@ -35,12 +35,12 @@ class HomeScreen extends StatelessWidget {
             unselectedItemColor: Colors.white54,
             type: BottomNavigationBarType.fixed,
             iconSize: 20.0,
-            selectedLabelStyle: TextStyle(
+            selectedLabelStyle: const TextStyle(
               fontSize: 12.0, // Customize the text size for the selected label
               fontWeight:
                   FontWeight.bold, // You can also customize other properties
             ),
-            unselectedLabelStyle: TextStyle(
+            unselectedLabelStyle: const TextStyle(
               fontSize:
                   12.0, // Customize the text size for the unselected label
               fontWeight: FontWeight.normal,
