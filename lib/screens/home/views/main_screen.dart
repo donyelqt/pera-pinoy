@@ -85,9 +85,24 @@ class MainScreen extends StatelessWidget {
                   color: Colors.redAccent,
                   borderRadius: BorderRadius.circular(30)),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text("Total Balanced"),
-                  const Text("₱ 1,000,000.00"),
+                  const Text(
+                    "Total Balanced",
+                    style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600),
+                  ),
+                  const SizedBox(height: 12),
+                  const Text(
+                    "\₱ 1000000",
+                    style: TextStyle(
+                        fontSize: 40,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 12),
                   Row(
                     children: [
                       Row(
@@ -101,17 +116,28 @@ class MainScreen extends StatelessWidget {
                                 child: Icon(
                               CupertinoIcons.arrow_down,
                               size: 14,
+                              color: Colors.greenAccent,
                             )),
                           ),
-                          SizedBox(width: 8,),
+                          SizedBox(
+                            width: 8,
+                          ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text(
-                                "Budget"
+                                "Budget",
+                                style: TextStyle(
+                                    fontSize: 14,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500),
                               ),
                               const Text(
-                                "₱ 2,000,000.00"
+                                "₱ 2000000",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w600),
                               ),
                             ],
                           )
