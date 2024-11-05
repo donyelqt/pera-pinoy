@@ -18,8 +18,7 @@ class MainScreen extends StatelessWidget {
                 color: Colors.black87, // Black background
                 borderRadius: BorderRadius.circular(30), // Rounded corners
               ),
-              child: 
-              Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
@@ -44,8 +43,8 @@ class MainScreen extends StatelessWidget {
                       ),
                       const SizedBox(width: 8),
                       Column(
-                        crossAxisAlignment: CrossAxisAlignment
-                            .start, // Align text to the left
+                        crossAxisAlignment:
+                            CrossAxisAlignment.start, // Align text to the left
                         children: [
                           Text(
                             "Welcome to PeraPinoy!",
@@ -69,17 +68,53 @@ class MainScreen extends StatelessWidget {
                   ),
                   IconButton(
                       onPressed: () {},
-                      icon: Icon(CupertinoIcons.settings_solid, color: Colors.orangeAccent,)),
+                      icon: Icon(
+                        CupertinoIcons.settings,
+                        color: Colors.orangeAccent,
+                      )),
                 ],
               ),
             ),
-            const SizedBox(height: 20,),
+            const SizedBox(
+              height: 20,
+            ),
             Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.width / 2,
               decoration: BoxDecoration(
-                color: Colors.redAccent,
-                borderRadius: BorderRadius.circular(30)
+                  color: Colors.redAccent,
+                  borderRadius: BorderRadius.circular(30)),
+              child: Column(
+                children: [
+                  Text(
+                    "Total Balanced"
+                    ), 
+                  Text(
+                    "₱ 1,000,000.00"
+                   ),
+                   Row(
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            width: 30,
+                            height: 30,
+                            decoration: BoxDecoration(
+                              color: Colors.white30,
+                              shape: BoxShape.circle
+                            ),
+                            child: Center(
+                              child: Icon(
+                                CupertinoIcons.arrow_down,
+                                size: 12,
+                              )
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                   )
+                ],
               ),
             )
           ],
