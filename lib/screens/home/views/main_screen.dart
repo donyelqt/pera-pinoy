@@ -85,8 +85,8 @@ class MainScreen extends StatelessWidget {
                 gradient: LinearGradient(
                   colors: [
                     Theme.of(context).colorScheme.secondary,
-                    Theme.of(context).colorScheme.primary,
-                    Theme.of(context).colorScheme.tertiary,
+                    Theme.of(context).colorScheme.onSurface, // remove primary and replace with onSurface
+                    // Theme.of(context).colorScheme.tertiary,
                   ],
                 ),
                 borderRadius: BorderRadius.circular(30),
