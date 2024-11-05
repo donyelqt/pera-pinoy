@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
+
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -125,8 +127,8 @@ class MainScreen extends StatelessWidget {
                                   shape: BoxShape.circle),
                               child: Center(
                                   child: Icon(
-                                CupertinoIcons.arrow_down,
-                                size: 14,
+                                CupertinoIcons.money_dollar,
+                                size: 18,
                                 color: Colors.greenAccent,
                               )),
                             ),
@@ -164,9 +166,9 @@ class MainScreen extends StatelessWidget {
                                   shape: BoxShape.circle),
                               child: Center(
                                   child: Icon(
-                                CupertinoIcons.arrow_up,
-                                size: 14,
-                                color: Colors.red,
+                                CupertinoIcons.money_dollar,
+                                size: 18,
+                                color: Colors.black,
                               )),
                             ),
                             SizedBox(
