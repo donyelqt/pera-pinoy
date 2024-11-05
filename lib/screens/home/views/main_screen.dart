@@ -97,13 +97,13 @@ class MainScreen extends StatelessWidget {
                   const Text(
                     "Total Balanced",
                     style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 16,
                         color: Colors.white,
                         fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 12),
                   const Text(
-                    "\₱ 1000000",
+                    "\₱ 1500000",
                     style: TextStyle(
                         fontSize: 40,
                         color: Colors.white,
@@ -113,6 +113,7 @@ class MainScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         vertical: 12, horizontal: 20),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Row(
                           children: [
@@ -144,6 +145,45 @@ class MainScreen extends StatelessWidget {
                                 ),
                                 const Text(
                                   "₱ 2000000",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w600),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Container(
+                              width: 30,
+                              height: 30,
+                              decoration: const BoxDecoration(
+                                  color: Colors.white30,
+                                  shape: BoxShape.circle),
+                              child: Center(
+                                  child: Icon(
+                                CupertinoIcons.arrow_up,
+                                size: 14,
+                                color: Colors.red,
+                              )),
+                            ),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text(
+                                  "Expenses",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                                const Text(
+                                  "₱ 500000",
                                   style: TextStyle(
                                       fontSize: 18,
                                       color: Colors.white,
