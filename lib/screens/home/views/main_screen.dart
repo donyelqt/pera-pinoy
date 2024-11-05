@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatelessWidget {
@@ -7,24 +8,34 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        padding: const EdgeInsets.symmetric(horizontal: 25.0),
         child: Column(
           children: [
             Container(
               padding: const EdgeInsets.all(12.0), // Optimized padding around both elements
               decoration: BoxDecoration(
-                color: Colors.red.shade500, // Pink background
+                color: Colors.black87, // Black background
                 borderRadius: BorderRadius.circular(14), // Rounded corners
               ),
               child: Row(
                 children: [
-                  Container(
-                    width: 60,
-                    height: 60,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.yellow[700],
-                    ),
+                  Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      Container(
+                        width: 60,
+                        height: 60,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.red[700],
+                        ),
+                      ),
+                      Icon(
+                        CupertinoIcons.person_fill, 
+                        color: Colors.white,
+                        size: 40,
+                      )
+                    ],
                   ),
                   const SizedBox(width: 8),
                   Column(
@@ -35,7 +46,7 @@ class MainScreen extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w600,
-                          color: Colors.white70
+                          color: Colors.white70,
                         ),
                       ),
                       Text(
@@ -43,7 +54,7 @@ class MainScreen extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
-                          color: Theme.of(context).colorScheme.surface,
+                          color: Colors.redAccent,
                         ),
                       ),
                     ],
