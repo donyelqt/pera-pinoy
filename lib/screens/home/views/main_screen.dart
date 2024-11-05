@@ -86,34 +86,37 @@ class MainScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30)),
               child: Column(
                 children: [
-                  Text(
-                    "Total Balanced"
-                    ), 
-                  Text(
-                    "₱ 1,000,000.00"
-                   ),
-                   Row(
+                  const Text("Total Balanced"),
+                  const Text("₱ 1,000,000.00"),
+                  Row(
                     children: [
                       Row(
                         children: [
                           Container(
                             width: 30,
                             height: 30,
-                            decoration: BoxDecoration(
-                              color: Colors.white30,
-                              shape: BoxShape.circle
-                            ),
+                            decoration: const BoxDecoration(
+                                color: Colors.white30, shape: BoxShape.circle),
                             child: Center(
-                              child: Icon(
-                                CupertinoIcons.arrow_down,
-                                size: 12,
-                              )
-                            ),
+                                child: Icon(
+                              CupertinoIcons.arrow_down,
+                              size: 12,
+                            )),
+                          ),
+                          Column(
+                            children: [
+                              const Text(
+                                "Budget"
+                              ),
+                              const Text(
+                                "₱ 2,000,000.00"
+                              ),
+                            ],
                           )
                         ],
                       )
                     ],
-                   )
+                  )
                 ],
               ),
             )
