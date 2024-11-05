@@ -10,30 +10,46 @@ class MainScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
           children: [
-            Row(
-              children: [
-                Container(
-                  width: 60,
-                  height: 60,
-                  decoration: const BoxDecoration(
-                      shape: BoxShape.circle, color: Colors.redAccent),
-                ),
-                SizedBox(width: 8,),
-                Column(
-                  children: [
-                    Text(
-                      "Welcome to PeraPinoy!",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w800
+            Container(
+              padding: const EdgeInsets.all(12.0), // Optimized padding around both elements
+              decoration: BoxDecoration(
+                color: Colors.red.shade500, // Pink background
+                borderRadius: BorderRadius.circular(14), // Rounded corners
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.yellow[700],
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
+                    children: [
+                      Text(
+                        "Welcome to PeraPinoy!",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.white70
+                        ),
                       ),
-                    ), 
-                    Text(
-                      "Doniele Arys Antonio"
-                    )
-                  ],
-                )
-              ],
+                      Text(
+                        "Doniele Arys Antonio",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Theme.of(context).colorScheme.surface,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             )
           ],
         ),
@@ -41,3 +57,4 @@ class MainScreen extends StatelessWidget {
     );
   }
 }
+
