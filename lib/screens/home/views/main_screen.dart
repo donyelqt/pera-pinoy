@@ -72,6 +72,15 @@ class MainScreen extends StatelessWidget {
                       icon: Icon(CupertinoIcons.settings_solid, color: Colors.orangeAccent,)),
                 ],
               ),
+            ),
+            const SizedBox(height: 20,),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.width / 2,
+              decoration: BoxDecoration(
+                color: Colors.redAccent,
+                borderRadius: BorderRadius.circular(30)
+              ),
             )
           ],
         ),
