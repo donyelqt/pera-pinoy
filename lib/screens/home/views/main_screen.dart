@@ -89,7 +89,7 @@ class MainScreen extends StatelessWidget {
             const SizedBox(height: 20),
             Container(
               width: MediaQuery.of(context).size.width,
-              height: 300,
+              height: 265,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
@@ -106,7 +106,7 @@ class MainScreen extends StatelessWidget {
                     "Total Balance",
                     style: TextStyle(
                         fontSize: 16,
-                        color: Colors.white,
+                        color: Colors.white60,
                         fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 12),
