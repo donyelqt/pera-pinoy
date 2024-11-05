@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pera_pinoy/screens/home/views/main_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -76,6 +77,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
       ),
+      body: const MainScreen(),
     );
   }
 }
