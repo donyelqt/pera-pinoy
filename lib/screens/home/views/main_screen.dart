@@ -16,7 +16,7 @@ class MainScreen extends StatelessWidget {
                   12.0), // Optimized padding around both elements
               decoration: BoxDecoration(
                 color: Colors.black87, // Black background
-                borderRadius: BorderRadius.circular(14), // Rounded corners
+                borderRadius: BorderRadius.circular(30), // Rounded corners
               ),
               child: 
               Row(
