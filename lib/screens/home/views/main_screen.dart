@@ -189,12 +189,21 @@ class MainScreen extends StatelessWidget {
                       height:
                           20), // Space between budget/expenses and progress bar
                   // Progress Percentage Display
-                  const Text(
-                    "Total Balanced",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white70,
-                        fontWeight: FontWeight.bold),
+                  Container(
+                    padding:
+                        EdgeInsets.all(12.0), // Adjust the padding as needed
+                    decoration: BoxDecoration(
+                      color: Colors.black87, // Set the background color to black
+                      borderRadius: BorderRadius.circular(
+                          20.0), // Adjust the border radius as needed
+                    ), // Set the background color to black
+                    child: const Text(
+                      "Total Balanced",
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.red,
+                          fontWeight: FontWeight.bold),
+                    ),
                   ),
                   const SizedBox(height: 2),
                   Text(
@@ -244,4 +253,3 @@ class MainScreen extends StatelessWidget {
     );
   }
 }
-
