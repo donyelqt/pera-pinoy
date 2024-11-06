@@ -223,9 +223,9 @@ class MainScreen extends StatelessWidget {
                         LinearProgressIndicator(
                           value: progress.clamp(0.0,
                               1.0), // Ensure the value is between 0.0 and 1.0
-                          backgroundColor: Colors.white30, // Background color
+                          backgroundColor: Colors.yellowAccent, // Background color
                           valueColor: const AlwaysStoppedAnimation<Color>(
-                              Colors.yellowAccent), // Progress color
+                              Colors.lightBlueAccent), // Progress color
                           borderRadius: BorderRadius.circular(30),
                           minHeight: 15, // Height of the progress bar
                         ),
