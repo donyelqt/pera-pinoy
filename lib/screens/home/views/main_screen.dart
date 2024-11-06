@@ -198,7 +198,7 @@ class MainScreen extends StatelessWidget {
                           20.0), // Adjust the border radius as needed
                     ), // Set the background color to black
                     child: const Text(
-                      "Total Balanced",
+                      "Total Balanced 💸",
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors.red,
