@@ -102,21 +102,6 @@ class MainScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text(
-                    "Total Balance",
-                    style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.white60,
-                        fontWeight: FontWeight.w600),
-                  ),
-                  const SizedBox(height: 12),
-                  Text(
-                    "\₱ 1500000",
-                    style: TextStyle(
-                        fontSize: 35,
-                        color: Colors.yellow.shade700,
-                        fontWeight: FontWeight.bold),
-                  ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         vertical: 12, horizontal: 20),
@@ -129,11 +114,11 @@ class MainScreen extends StatelessWidget {
                               width: 30,
                               height: 30,
                               decoration: const BoxDecoration(
-                                  color: Colors.white30,
+                                  color: Colors.white54,
                                   shape: BoxShape.circle),
                               child: const Center(
                                   child: Icon(
-                                CupertinoIcons.money_dollar,
+                                CupertinoIcons.tickets_fill,
                                 size: 18,
                                 color: Colors.yellowAccent,
                               )),
@@ -166,11 +151,11 @@ class MainScreen extends StatelessWidget {
                               width: 30,
                               height: 30,
                               decoration: const BoxDecoration(
-                                  color: Colors.white30,
+                                  color: Colors.white54,
                                   shape: BoxShape.circle),
                               child: const Center(
                                   child: Icon(
-                                CupertinoIcons.money_dollar,
+                                CupertinoIcons.tickets_fill,
                                 size: 18,
                                 color: Colors.black,
                               )),
@@ -204,10 +189,24 @@ class MainScreen extends StatelessWidget {
                       height:
                           20), // Space between budget/expenses and progress bar
                   // Progress Percentage Display
-
+                  const Text(
+                    "Total Balanced",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white70,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    "\₱ 1500000",
+                    style: TextStyle(
+                        fontSize: 35,
+                        color: Colors.yellow.shade700,
+                        fontWeight: FontWeight.bold),
+                  ),
                   const SizedBox(height: 8),
                   // Linear Progress Indicator
-                  Container(
+                  SizedBox(
                     width: MediaQuery.of(context).size.width *
                         0.8, // Adjust width as needed
                     child: Column(
@@ -245,3 +244,4 @@ class MainScreen extends StatelessWidget {
     );
   }
 }
+
