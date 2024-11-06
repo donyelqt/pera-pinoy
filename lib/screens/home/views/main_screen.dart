@@ -81,7 +81,7 @@ class MainScreen extends StatelessWidget {
                       onPressed: () {},
                       icon: const Icon(
                         CupertinoIcons.settings,
-                        color: Colors.white,
+                        color: Colors.orangeAccent,
                       )),
                 ],
               ),
@@ -114,13 +114,13 @@ class MainScreen extends StatelessWidget {
                               width: 30,
                               height: 30,
                               decoration: const BoxDecoration(
-                                  color: Colors.white54,
+                                  color: Colors.white38,
                                   shape: BoxShape.circle),
                               child: const Center(
                                   child: Icon(
                                 CupertinoIcons.tickets_fill,
                                 size: 18,
-                                color: Colors.yellowAccent,
+                                color: Color.fromARGB(255, 0, 97, 176),
                               )),
                             ),
                             const SizedBox(width: 8),
@@ -151,13 +151,13 @@ class MainScreen extends StatelessWidget {
                               width: 30,
                               height: 30,
                               decoration: const BoxDecoration(
-                                  color: Colors.white54,
+                                  color: Colors.white38,
                                   shape: BoxShape.circle),
                               child: const Center(
                                   child: Icon(
                                 CupertinoIcons.tickets_fill,
                                 size: 18,
-                                color: Colors.black,
+                                color: Color.fromARGB(255, 221, 166, 1),
                               )),
                             ),
                             const SizedBox(width: 8),
