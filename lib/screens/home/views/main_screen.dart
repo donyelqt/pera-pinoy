@@ -227,7 +227,7 @@ class MainScreen extends StatelessWidget {
                           child: Text(
                             "$percentage% Expensed", // Display percentage
                             style: const TextStyle(
-                              color: Colors.white,
+                              color: Colors.white70,
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
                             ),
