@@ -89,7 +89,7 @@ class MainScreen extends StatelessWidget {
             const SizedBox(height: 20),
             Container(
               width: MediaQuery.of(context).size.width,
-              height: 280,
+              height: 275,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
@@ -193,7 +193,7 @@ class MainScreen extends StatelessWidget {
                   ),
                   const SizedBox(
                       height:
-                          20), // Space between budget/expenses and progress bar
+                          10), // Space between budget/expenses and progress bar
                   // Progress Percentage Display
                   Container(
                     padding:
