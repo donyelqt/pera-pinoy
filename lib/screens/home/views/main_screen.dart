@@ -89,7 +89,7 @@ class MainScreen extends StatelessWidget {
             const SizedBox(height: 20),
             Container(
               width: MediaQuery.of(context).size.width,
-              height: 265,
+              height: 280,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
@@ -181,9 +181,15 @@ class MainScreen extends StatelessWidget {
                               ],
                             )
                           ],
-                        )
+                        ),
                       ],
                     ),
+                  ),
+                  Divider(
+                    color: Colors.yellowAccent, // Set the color of the line
+                    thickness: 1, // Set the thickness of the line
+                    // indent: 20, // Optional: set the start padding
+                    // endIndent: 20, // Optional: set the end padding
                   ),
                   const SizedBox(
                       height:
@@ -193,7 +199,8 @@ class MainScreen extends StatelessWidget {
                     padding:
                         EdgeInsets.all(12.0), // Adjust the padding as needed
                     decoration: BoxDecoration(
-                      color: Colors.black87, // Set the background color to black
+                      color:
+                          Colors.black87, // Set the background color to black
                       borderRadius: BorderRadius.circular(
                           20.0), // Adjust the border radius as needed
                     ), // Set the background color to black
@@ -223,7 +230,8 @@ class MainScreen extends StatelessWidget {
                         LinearProgressIndicator(
                           value: progress.clamp(0.0,
                               1.0), // Ensure the value is between 0.0 and 1.0
-                          backgroundColor: Colors.yellowAccent, // Background color
+                          backgroundColor:
+                              Colors.deepOrangeAccent, // Background color
                           valueColor: const AlwaysStoppedAnimation<Color>(
                               Colors.lightBlueAccent), // Progress color
                           borderRadius: BorderRadius.circular(30),
