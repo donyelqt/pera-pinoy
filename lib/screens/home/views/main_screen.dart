@@ -98,6 +98,13 @@ class MainScreen extends StatelessWidget {
                   ],
                 ),
                 borderRadius: BorderRadius.circular(30),
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 2,
+                    color: Colors.grey.shade300,
+                    offset: Offset(5, 5)
+                  )
+                ]
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -208,7 +215,7 @@ class MainScreen extends StatelessWidget {
                       "Total Balance 💸",
                       style: TextStyle(
                           fontSize: 20,
-                          color: Colors.yellowAccent,
+                          color: Color.fromARGB(255, 216, 195, 0),
                           fontWeight: FontWeight.bold),
                     ),
                   ),
