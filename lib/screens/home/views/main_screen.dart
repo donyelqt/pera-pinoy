@@ -208,7 +208,7 @@ class MainScreen extends StatelessWidget {
                       "Total Balance 💸",
                       style: TextStyle(
                           fontSize: 20,
-                          color: Colors.red,
+                          color: Colors.yellowAccent,
                           fontWeight: FontWeight.bold),
                     ),
                   ),
