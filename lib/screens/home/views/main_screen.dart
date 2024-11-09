@@ -91,21 +91,19 @@ class MainScreen extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               height: 275,
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Theme.of(context).colorScheme.secondary,
-                    Theme.of(context).colorScheme.onSurface,
-                  ],
-                ),
-                borderRadius: BorderRadius.circular(30),
-                boxShadow: [
-                  BoxShadow(
-                    blurRadius: 2,
-                    color: Colors.grey.shade300,
-                    offset: Offset(5, 5)
-                  )
-                ]
-              ),
+                  gradient: LinearGradient(
+                    colors: [
+                      Theme.of(context).colorScheme.secondary,
+                      Theme.of(context).colorScheme.onSurface,
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(30),
+                  boxShadow: [
+                    BoxShadow(
+                        blurRadius: 4,
+                        color: Colors.grey.shade300,
+                        offset: Offset(5, 5))
+                  ]),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -261,6 +259,20 @@ class MainScreen extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const Row(
+              children: [
+                Text(
+                  "Transactions",
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
+              ],
             )
           ],
         ),
