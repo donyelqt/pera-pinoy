@@ -237,9 +237,9 @@ class MainScreen extends StatelessWidget {
                           value: progress.clamp(0.0,
                               1.0), // Ensure the value is between 0.0 and 1.0
                           backgroundColor:
-                              Colors.deepOrangeAccent, // Background color
+                              Colors.white70, // Background color
                           valueColor: const AlwaysStoppedAnimation<Color>(
-                              Colors.lightBlueAccent), // Progress color
+                              Colors.yellowAccent), // Progress color
                           borderRadius: BorderRadius.circular(30),
                           minHeight: 15, // Height of the progress bar
                         ),
@@ -269,9 +269,9 @@ class MainScreen extends StatelessWidget {
               children: [
                 Container(
                   padding:
-                      EdgeInsets.symmetric(horizontal: 14.0, vertical: 10.0),
+                      EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
                   decoration: BoxDecoration(
-                    color: Colors.black87,
+                    color: Colors.red[700],
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text(
@@ -279,16 +279,16 @@ class MainScreen extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 20,
-                      color: Colors.red[700],
+                      color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
                 Container(
                   padding:
-                      EdgeInsets.symmetric(horizontal: 14.0, vertical: 10.0),
+                      EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
                   decoration: BoxDecoration(
-                    color: Colors.red[700],
+                    color: Colors.black87,
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text(
