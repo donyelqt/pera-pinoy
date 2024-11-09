@@ -266,7 +266,7 @@ class MainScreen extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(16.0), // Adjust the padding as needed
               decoration: BoxDecoration(
-                color: Colors.redAccent, // Set the background color
+                color: Colors.red, // Set the background color
                 borderRadius: BorderRadius.circular(
                     30), // Optional: adds rounded corners
               ),
@@ -274,11 +274,11 @@ class MainScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Expense History",
+                    "Expense History 📜",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 20,
-                      color: Colors.black87,
+                      color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
