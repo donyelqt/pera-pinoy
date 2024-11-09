@@ -319,7 +319,7 @@ class MainScreen extends StatelessWidget {
                     padding: const EdgeInsets.only(bottom: 12.0),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey[500],
+                        color: Colors.grey[400],
                         borderRadius: BorderRadius.circular(14)
                       ),
                       child: Padding(
