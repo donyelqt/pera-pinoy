@@ -319,16 +319,17 @@ class MainScreen extends StatelessWidget {
                     padding: const EdgeInsets.only(bottom: 12.0),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey[300],
-                        borderRadius: BorderRadius.circular(14)
+                        color: Colors.black87,
+                        borderRadius: BorderRadius.circular(25)
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(12.0),
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Container(
-                              width: 50,
-                              height: 50,
+                              width: 60,
+                              height: 60,
                               decoration: BoxDecoration(
                                 color: Colors.redAccent,
                                 shape: BoxShape.circle
