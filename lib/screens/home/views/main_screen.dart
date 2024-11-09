@@ -201,8 +201,8 @@ class MainScreen extends StatelessWidget {
                           10), // Space between budget/expenses and progress bar
                   // Progress Percentage Display
                   Container(
-                    padding:
-                        const EdgeInsets.all(12.0), // Adjust the padding as needed
+                    padding: const EdgeInsets.all(
+                        12.0), // Adjust the padding as needed
                     decoration: BoxDecoration(
                       color:
                           Colors.black87, // Set the background color to black
@@ -263,17 +263,28 @@ class MainScreen extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            const Row(
-              children: [
-                Text(
-                  "Transactions",
-                  style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
+            Container(
+              padding: EdgeInsets.all(16.0), // Adjust the padding as needed
+              decoration: BoxDecoration(
+                color: Colors.redAccent, // Set the background color
+                borderRadius: BorderRadius.circular(
+                    30), // Optional: adds rounded corners
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Expense History",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black87,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
