@@ -209,11 +209,11 @@ class MainScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(
                           20.0), // Adjust the border radius as needed
                     ), // Set the background color to black
-                    child: const Text(
+                    child: Text(
                       "Total Balance 💸",
                       style: TextStyle(
                           fontSize: 20,
-                          color: Color.fromARGB(255, 216, 195, 0),
+                          color: Colors.red[700], // Color.fromARGB(255, 216, 195, 0),
                           fontWeight: FontWeight.bold),
                     ),
                   ),
@@ -266,7 +266,7 @@ class MainScreen extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(12.0), // Adjust the padding as needed (16 default)
               decoration: BoxDecoration(
-                color: Colors.red, // Set the background color
+                color: Colors.black87, // Set the background color
                 borderRadius: BorderRadius.circular(
                     20), // Optional: adds rounded corners
               ),
@@ -278,7 +278,7 @@ class MainScreen extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 20,
-                      color: Colors.white,
+                      color: Colors.red[700],
                       fontWeight: FontWeight.bold,
                     ),
                   ),
