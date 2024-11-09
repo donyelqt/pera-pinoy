@@ -288,7 +288,7 @@ class MainScreen extends StatelessWidget {
                   padding:
                       EdgeInsets.symmetric(horizontal: 14.0, vertical: 10.0),
                   decoration: BoxDecoration(
-                    color: Colors.red,
+                    color: Colors.red[700],
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text(
@@ -296,7 +296,7 @@ class MainScreen extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 20,
-                      color: Colors.yellow,
+                      color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
