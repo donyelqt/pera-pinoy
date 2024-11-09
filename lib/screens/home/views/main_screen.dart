@@ -213,7 +213,8 @@ class MainScreen extends StatelessWidget {
                       "Total Balance 💸",
                       style: TextStyle(
                           fontSize: 20,
-                          color: Colors.red[700], // Color.fromARGB(255, 216, 195, 0),
+                          color: Colors
+                              .red[700], // Color.fromARGB(255, 216, 195, 0),
                           fontWeight: FontWeight.bold),
                     ),
                   ),
@@ -263,17 +264,17 @@ class MainScreen extends StatelessWidget {
             const SizedBox(
               height: 12,
             ),
-            Container(
-              padding: EdgeInsets.all(12.0), // Adjust the padding as needed (16 default)
-              decoration: BoxDecoration(
-                color: Colors.black87, // Set the background color
-                borderRadius: BorderRadius.circular(
-                    20), // Optional: adds rounded corners
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 14.0, vertical: 10.0),
+                  decoration: BoxDecoration(
+                    color: Colors.black87,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
                     "Expense History 📜",
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -282,8 +283,25 @@ class MainScreen extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                ],
-              ),
+                ),
+                Container(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 14.0, vertical: 10.0),
+                  decoration: BoxDecoration(
+                    color: Colors.red,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                    "Others",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.yellow,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
             )
           ],
         ),
