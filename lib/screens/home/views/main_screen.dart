@@ -86,7 +86,7 @@ class MainScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 12),
             Container(
               width: MediaQuery.of(context).size.width,
               height: 275,
@@ -261,14 +261,14 @@ class MainScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 20,
+              height: 12,
             ),
             Container(
-              padding: EdgeInsets.all(16.0), // Adjust the padding as needed
+              padding: EdgeInsets.all(12.0), // Adjust the padding as needed (16 default)
               decoration: BoxDecoration(
                 color: Colors.red, // Set the background color
                 borderRadius: BorderRadius.circular(
-                    30), // Optional: adds rounded corners
+                    20), // Optional: adds rounded corners
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
