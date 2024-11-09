@@ -102,7 +102,7 @@ class MainScreen extends StatelessWidget {
                     BoxShadow(
                         blurRadius: 4,
                         color: Colors.grey.shade300,
-                        offset: Offset(5, 5))
+                        offset: const Offset(5, 5))
                   ]),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -140,7 +140,7 @@ class MainScreen extends StatelessWidget {
                                       fontWeight: FontWeight.w500),
                                 ),
                                 Text(
-                                  "\₱ 500000",
+                                  "₱ 500000",
                                   style: TextStyle(
                                       fontSize: 18,
                                       color: Colors.white70,
@@ -190,7 +190,7 @@ class MainScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Divider(
+                  const Divider(
                     color: Colors.yellowAccent, // Set the color of the line
                     thickness: 1, // Set the thickness of the line
                     // indent: 20, // Optional: set the start padding
@@ -202,7 +202,7 @@ class MainScreen extends StatelessWidget {
                   // Progress Percentage Display
                   Container(
                     padding:
-                        EdgeInsets.all(12.0), // Adjust the padding as needed
+                        const EdgeInsets.all(12.0), // Adjust the padding as needed
                     decoration: BoxDecoration(
                       color:
                           Colors.black87, // Set the background color to black
@@ -219,7 +219,7 @@ class MainScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 2),
                   Text(
-                    "\₱ 1500000",
+                    "₱ 1500000",
                     style: TextStyle(
                         fontSize: 35,
                         color: Colors.yellow.shade700,
@@ -273,7 +273,7 @@ class MainScreen extends StatelessWidget {
                       fontWeight: FontWeight.bold),
                 ),
               ],
-            )
+            ),
           ],
         ),
       ),
