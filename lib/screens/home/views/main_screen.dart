@@ -291,17 +291,56 @@ class MainScreen extends StatelessWidget {
                     color: Colors.black87,
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Text(
-                    "Others",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                  child: GestureDetector(
+                    onTap: () {
+
+                    },
+                    child: Text(
+                      "Others",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
               ],
+            ),
+            const SizedBox(
+              height: 12,
+            ),
+            Expanded(
+              child: ListView.builder(
+                itemCount: 2,
+                itemBuilder: (context, int i) {
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 12.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[500],
+                        borderRadius: BorderRadius.circular(14)
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Row(
+                          children: [
+                            Container(
+                              width: 50,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                color: Colors.redAccent,
+                                shape: BoxShape.circle
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  );
+                }
+              ),
             )
           ],
         ),
