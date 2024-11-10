@@ -214,7 +214,7 @@ class MainScreen extends StatelessWidget {
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors
-                              .lightBlueAccent, // Color.fromARGB(255, 216, 195, 0),
+                              .yellowAccent, // Color.fromARGB(255, 216, 195, 0),
                           fontWeight: FontWeight.bold),
                     ),
                   ),
