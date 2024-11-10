@@ -268,7 +268,7 @@ class MainScreen extends StatelessWidget {
               children: [
                 Container(
                   padding:
-                      EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
+                      EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
                   decoration: BoxDecoration(
                     color: Colors.red[700],
                     borderRadius: BorderRadius.circular(20),
@@ -277,7 +277,7 @@ class MainScreen extends StatelessWidget {
                     "Expense History 📜",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 16,
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
@@ -285,7 +285,24 @@ class MainScreen extends StatelessWidget {
                 ),
                 Container(
                   padding:
-                      EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
+                      EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
+                  decoration: BoxDecoration(
+                    color: Colors.red[700],
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                    "Leaderboards",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                Container(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
                   decoration: BoxDecoration(
                     color: Colors.black87,
                     borderRadius: BorderRadius.circular(20),
@@ -296,27 +313,10 @@ class MainScreen extends StatelessWidget {
                       "Others",
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 16,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
-                    ),
-                  ),
-                ),
-                Container(
-                  padding:
-                      EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
-                  decoration: BoxDecoration(
-                    color: Colors.red[700],
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Text(
-                    "Leaderboards 🏅",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
