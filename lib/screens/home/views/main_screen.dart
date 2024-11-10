@@ -236,8 +236,7 @@ class MainScreen extends StatelessWidget {
                         LinearProgressIndicator(
                           value: progress.clamp(0.0,
                               1.0), // Ensure the value is between 0.0 and 1.0
-                          backgroundColor:
-                              Colors.white70, // Background color
+                          backgroundColor: Colors.white70, // Background color
                           valueColor: const AlwaysStoppedAnimation<Color>(
                               Colors.yellowAccent), // Progress color
                           borderRadius: BorderRadius.circular(30),
@@ -292,9 +291,7 @@ class MainScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: GestureDetector(
-                    onTap: () {
-
-                    },
+                    onTap: () {},
                     child: Text(
                       "Others",
                       textAlign: TextAlign.center,
@@ -306,6 +303,23 @@ class MainScreen extends StatelessWidget {
                     ),
                   ),
                 ),
+                Container(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 20.0, vertical: 12.0),
+                  decoration: BoxDecoration(
+                    color: Colors.red[700],
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                    "Leaderboards 🏅",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ],
             ),
             const SizedBox(
@@ -313,35 +327,32 @@ class MainScreen extends StatelessWidget {
             ),
             Expanded(
               child: ListView.builder(
-                itemCount: 2,
-                itemBuilder: (context, int i) {
-                  return Padding(
-                    padding: const EdgeInsets.only(bottom: 12.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.black87,
-                        borderRadius: BorderRadius.circular(25)
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(12.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            Container(
-                              width: 60,
-                              height: 60,
-                              decoration: BoxDecoration(
-                                color: Colors.redAccent,
-                                shape: BoxShape.circle
-                              ),
-                            )
-                          ],
+                  itemCount: 2,
+                  itemBuilder: (context, int i) {
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 12.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.black87,
+                            borderRadius: BorderRadius.circular(25)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Container(
+                                width: 60,
+                                height: 60,
+                                decoration: BoxDecoration(
+                                    color: Colors.redAccent,
+                                    shape: BoxShape.circle),
+                              )
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-                  );
-                }
-              ),
+                    );
+                  }),
             )
           ],
         ),
