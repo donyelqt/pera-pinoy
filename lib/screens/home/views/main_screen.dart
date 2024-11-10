@@ -348,7 +348,7 @@ class MainScreen extends StatelessWidget {
                                         '-\₱ 56000',
                                         style: TextStyle(
                                           fontSize: 16,
-                                          color: Colors.white,
+                                          color: Colors.redAccent,
                                           fontWeight: FontWeight.w400,
                                         ),
                                       ),
@@ -356,7 +356,7 @@ class MainScreen extends StatelessWidget {
                                         'Today',
                                         style: TextStyle(
                                           fontSize: 16,
-                                          color: Colors.white38,
+                                          color: Colors.white54,
                                           fontWeight: FontWeight.w400,
                                         ),
                                       ),
@@ -369,7 +369,7 @@ class MainScreen extends StatelessWidget {
                                   Text(
                                     'Laptop',
                                     style: TextStyle(
-                                      fontSize: 20,
+                                      fontSize: 18,
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                     ),
