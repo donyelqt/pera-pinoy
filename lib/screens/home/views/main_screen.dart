@@ -150,6 +150,15 @@ class MainScreen extends StatelessWidget {
                             )
                           ],
                         ),
+                        // Vertical Divider
+                        Container(
+                          width: 2, // Thickness of the vertical line
+                          height: 50, // Adjust the height to your preference
+                          color:
+                              Colors.white, // Set color for the divider line
+                          margin: const EdgeInsets.symmetric(
+                              horizontal: 16), // Optional spacing
+                        ),
                         Row(
                           children: [
                             Container(
@@ -191,8 +200,8 @@ class MainScreen extends StatelessWidget {
                     ),
                   ),
                   const Divider(
-                    color: Colors.yellowAccent, // Set the color of the line
-                    thickness: 1, // Set the thickness of the line
+                    color: Colors.white, // Set the color of the line
+                    thickness: 4, // Set the thickness of the line
                     // indent: 20, // Optional: set the start padding
                     // endIndent: 20, // Optional: set the end padding
                   ),
@@ -267,8 +276,8 @@ class MainScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 10.0, vertical: 6.0),
                   decoration: BoxDecoration(
                     color: Colors.red[700],
                     borderRadius: BorderRadius.circular(15),
@@ -284,8 +293,8 @@ class MainScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 10.0, vertical: 6.0),
                   decoration: BoxDecoration(
                     color: Colors.orangeAccent,
                     borderRadius: BorderRadius.circular(15),
@@ -301,8 +310,8 @@ class MainScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 10.0, vertical: 6.0),
                   decoration: BoxDecoration(
                     color: Colors.lightBlueAccent,
                     borderRadius: BorderRadius.circular(15),
@@ -340,23 +349,23 @@ class MainScreen extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              const Row(
+                               Row(
                                 children: [
                                   Column(
                                     children: [
                                       Text(
-                                        '-\₱ 56000',
+                                        '\₱ 50000',
                                         style: TextStyle(
-                                          fontSize: 16,
-                                          color: Colors.redAccent,
+                                          fontSize: 18,
+                                          color: Colors.yellow.shade700,
                                           fontWeight: FontWeight.w400,
                                         ),
                                       ),
                                       Text(
-                                        'Today',
+                                        'Nov 11, 2024',
                                         style: TextStyle(
                                           fontSize: 16,
-                                          color: Colors.white54,
+                                          color: Colors.white70,
                                           fontWeight: FontWeight.w400,
                                         ),
                                       ),
@@ -369,9 +378,9 @@ class MainScreen extends StatelessWidget {
                                   const Text(
                                     'Laptop',
                                     style: TextStyle(
-                                      fontSize: 18,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20,
+                                      color: Colors.yellowAccent,
+                                      fontWeight: FontWeight.w600,
                                     ),
                                   ),
                                   const SizedBox(width: 12),
