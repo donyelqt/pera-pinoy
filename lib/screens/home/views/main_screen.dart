@@ -62,7 +62,7 @@ class MainScreen extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 15,
                               fontWeight: FontWeight.w600,
-                              color: Colors.white70,
+                              color: Colors.lightBlueAccent,
                             ),
                           ),
                           Text(
@@ -214,7 +214,7 @@ class MainScreen extends StatelessWidget {
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors
-                              .red[700], // Color.fromARGB(255, 216, 195, 0),
+                              .lightBlueAccent, // Color.fromARGB(255, 216, 195, 0),
                           fontWeight: FontWeight.bold),
                     ),
                   ),
@@ -304,7 +304,7 @@ class MainScreen extends StatelessWidget {
                   padding:
                       EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
                   decoration: BoxDecoration(
-                    color: Colors.black87,
+                    color: Colors.lightBlueAccent,
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: GestureDetector(
