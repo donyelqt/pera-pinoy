@@ -268,12 +268,12 @@ class MainScreen extends StatelessWidget {
               children: [
                 Container(
                   padding:
-                      EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
+                      const EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
                   decoration: BoxDecoration(
                     color: Colors.red[700],
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  child: Text(
+                  child: const Text(
                     "Expense History",
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -285,12 +285,12 @@ class MainScreen extends StatelessWidget {
                 ),
                 Container(
                   padding:
-                      EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
+                      const EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
                   decoration: BoxDecoration(
                     color: Colors.orangeAccent,
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  child: Text(
+                  child: const Text(
                     "Leaderboards",
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -302,14 +302,14 @@ class MainScreen extends StatelessWidget {
                 ),
                 Container(
                   padding:
-                      EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
+                      const EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
                   decoration: BoxDecoration(
                     color: Colors.lightBlueAccent,
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: GestureDetector(
                     onTap: () {},
-                    child: Text(
+                    child: const Text(
                       "Others",
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -340,7 +340,7 @@ class MainScreen extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Row(
+                              const Row(
                                 children: [
                                   Column(
                                     children: [
@@ -366,7 +366,7 @@ class MainScreen extends StatelessWidget {
                               ),
                               Row(
                                 children: [
-                                  Text(
+                                  const Text(
                                     'Laptop',
                                     style: TextStyle(
                                       fontSize: 18,
@@ -374,11 +374,11 @@ class MainScreen extends StatelessWidget {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  SizedBox(width: 12),
+                                  const SizedBox(width: 12),
                                   Container(
                                     width: 60,
                                     height: 60,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                         color: Colors.redAccent,
                                         shape: BoxShape.circle),
                                   ),
