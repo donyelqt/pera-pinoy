@@ -338,15 +338,24 @@ class MainScreen extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.all(12.0),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
+                              Text(
+                                'Laptop',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              SizedBox(width: 12),
                               Container(
                                 width: 60,
                                 height: 60,
                                 decoration: BoxDecoration(
                                     color: Colors.redAccent,
                                     shape: BoxShape.circle),
-                              )
+                              ),
                             ],
                           ),
                         ),
