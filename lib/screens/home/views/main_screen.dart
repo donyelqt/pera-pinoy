@@ -271,10 +271,10 @@ class MainScreen extends StatelessWidget {
                       EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
                   decoration: BoxDecoration(
                     color: Colors.red[700],
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Text(
-                    "Expense History 📜",
+                    "Expense History",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 16,
@@ -287,8 +287,8 @@ class MainScreen extends StatelessWidget {
                   padding:
                       EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
                   decoration: BoxDecoration(
-                    color: Colors.red[700],
-                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.orangeAccent,
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Text(
                     "Leaderboards",
@@ -305,7 +305,7 @@ class MainScreen extends StatelessWidget {
                       EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
                   decoration: BoxDecoration(
                     color: Colors.black87,
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: GestureDetector(
                     onTap: () {},
