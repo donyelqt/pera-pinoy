@@ -340,21 +340,49 @@ class MainScreen extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
-                                'Laptop',
-                                style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                              Row(
+                                children: [
+                                  Column(
+                                    children: [
+                                      Text(
+                                        '-\₱ 56000',
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      Text(
+                                        'Today',
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                          color: Colors.white38,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
                               ),
-                              SizedBox(width: 12),
-                              Container(
-                                width: 60,
-                                height: 60,
-                                decoration: BoxDecoration(
-                                    color: Colors.redAccent,
-                                    shape: BoxShape.circle),
+                              Row(
+                                children: [
+                                  Text(
+                                    'Laptop',
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(width: 12),
+                                  Container(
+                                    width: 60,
+                                    height: 60,
+                                    decoration: BoxDecoration(
+                                        color: Colors.redAccent,
+                                        shape: BoxShape.circle),
+                                  ),
+                                ],
                               ),
                             ],
                           ),
