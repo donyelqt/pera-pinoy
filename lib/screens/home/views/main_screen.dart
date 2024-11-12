@@ -379,7 +379,7 @@ class MainScreen extends StatelessWidget {
                                     'Laptop',
                                     style: TextStyle(
                                       fontSize: 20,
-                                      color: Colors.yellowAccent,
+                                      color: Colors.white,
                                       fontWeight: FontWeight.w600,
                                     ),
                                   ),
