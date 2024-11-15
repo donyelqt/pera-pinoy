@@ -16,7 +16,7 @@ class LoginScreen extends StatelessWidget {
               width: double.infinity,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white70,
+                  color: Colors.grey.shade200,
                   borderRadius: BorderRadius.circular(8.0),
                 ),
                 child: TextField(
@@ -31,7 +31,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 10),
             Container(
               decoration: BoxDecoration(
-                color: Colors.white70,
+                color: Colors.grey.shade200,
                 borderRadius: BorderRadius.circular(8.0),
               ),
               child: TextField(
@@ -46,7 +46,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 30,),
             SizedBox(
               width: double.infinity,
-              height: 50,
+              height: 60,
               child: ElevatedButton(
                 style: ButtonStyle(
                   backgroundColor: WidgetStateProperty.resolveWith<Color>(
@@ -69,7 +69,7 @@ class LoginScreen extends StatelessWidget {
                   Navigator.pushReplacementNamed(context, '/home');
                 },
                 child: Text(
-                  'Signin',
+                  'Sign In',
                   style: TextStyle(
                     fontSize: 18.0,
                   ),
