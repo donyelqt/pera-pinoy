@@ -69,7 +69,7 @@ class LoginScreen extends StatelessWidget {
                   Navigator.pushReplacementNamed(context, '/home');
                 },
                 child: Text(
-                  'Login',
+                  'Signin',
                   style: TextStyle(
                     fontSize: 18.0,
                   ),
