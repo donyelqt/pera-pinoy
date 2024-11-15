@@ -16,14 +16,14 @@ class LoginScreen extends StatelessWidget {
               width: double.infinity,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.black12,
+                  color: Colors.black38,
                   borderRadius: BorderRadius.circular(8.0),
                 ),
                 child: TextField(
                   style: TextStyle(color: Colors.black),
                   decoration: InputDecoration(
                     labelText: 'Username',
-                    labelStyle: TextStyle(color: Colors.black),
+                    labelStyle: TextStyle(color: Colors.white),
                     border: InputBorder.none,
                     contentPadding: EdgeInsets.all(10.0),
                   ),
@@ -33,7 +33,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 10),
             Container(
               decoration: BoxDecoration(
-                color: Colors.black12,
+                color: Colors.black38,
                 borderRadius: BorderRadius.circular(8.0),
               ),
               child: TextField(
@@ -41,7 +41,7 @@ class LoginScreen extends StatelessWidget {
                 decoration: InputDecoration(
                   fillColor: Colors.white,
                   labelText: 'Password',
-                  labelStyle: TextStyle(color: Colors.black),
+                  labelStyle: TextStyle(color: Colors.white),
                   border: InputBorder.none,
                   contentPadding: EdgeInsets.all(10.0),
                 ),
