@@ -93,7 +93,7 @@ class MainScreen extends StatelessWidget {
               decoration: BoxDecoration(
                   gradient: const LinearGradient(
                     colors: [
-                      Color.fromARGB(255, 195, 29, 17),
+                      Color.fromARGB(255, 255, 0, 0), //Color.fromARGB(255, 195, 29, 17),
                       Colors.black,
                     ],
                   ),
