@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
             ), // Correct placement
             items: const [
               BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.house_alt_fill), label: 'Home'),
+                  icon: Icon(CupertinoIcons.square_grid_2x2_fill), label: 'Home'),
               BottomNavigationBarItem(
                   icon: Icon(CupertinoIcons.graph_square_fill),
                   label: 'Trends'),
@@ -56,7 +56,7 @@ class HomeScreen extends StatelessWidget {
               BottomNavigationBarItem(
                   icon: Icon(CupertinoIcons.waveform_path), label: 'Forecast'),
               BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.square_grid_2x2_fill),
+                  icon: Icon(CupertinoIcons.question),
                   label: 'Others'),
             ],
           ),
@@ -73,9 +73,9 @@ class HomeScreen extends StatelessWidget {
             shape: BoxShape.circle,
             gradient: RadialGradient(
               colors: [
-                Theme.of(context).colorScheme.primary,
-                Theme.of(context).colorScheme.secondary,
-                Theme.of(context).colorScheme.tertiary,
+                Colors.orangeAccent,
+                Colors.redAccent,
+                Colors.yellowAccent,
               ],
               transform: const GradientRotation(pi / 4),
             ),
