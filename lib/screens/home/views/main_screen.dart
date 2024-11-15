@@ -93,7 +93,7 @@ class MainScreen extends StatelessWidget {
               decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Colors.redAccent,
+                      Colors.red,
                       Colors.black,
                     ],
                   ),

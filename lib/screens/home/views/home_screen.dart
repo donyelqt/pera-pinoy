@@ -73,15 +73,16 @@ class HomeScreen extends StatelessWidget {
             shape: BoxShape.circle,
             gradient: RadialGradient(
               colors: [
-                Colors.orangeAccent,
-                Colors.redAccent,
-                Colors.yellowAccent,
+                Color.fromARGB(255, 255, 132, 0),
+                Color.fromARGB(255, 231, 0, 0),
+                const Color.fromARGB(255, 231, 204, 0),
               ],
               transform: const GradientRotation(pi / 4),
             ),
           ),
           child: const Icon(
             CupertinoIcons.add_circled_solid,
+            color: Colors.white
           ),
         ),
       ),
