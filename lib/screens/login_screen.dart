@@ -4,29 +4,77 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Login')),
+      appBar: AppBar(title: Image.asset('assets/PeraPinoy!.png', height: 50)),
       body: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: EdgeInsets.all(30.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/PeraPinoy!.png', height: 100),
+            Image.asset('assets/PeraPinoy!.png', height: 200),
             SizedBox(height: 20),
-            TextField(
-              decoration: InputDecoration(labelText: 'Username'),
+            SizedBox(
+              width: double.infinity,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white70,
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                child: TextField(
+                  decoration: InputDecoration(
+                    labelText: 'Username',
+                    border: InputBorder.none,
+                    contentPadding: EdgeInsets.all(10.0),
+                  ),
+                ),
+              ),
             ),
-            TextField(
-              decoration: InputDecoration(labelText: 'Password'),
-              obscureText: true,
+            SizedBox(height: 10),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white70,
+                borderRadius: BorderRadius.circular(8.0),
+              ),
+              child: TextField(
+                decoration: InputDecoration(
+                  labelText: 'Password',
+                  border: InputBorder.none,
+                  contentPadding: EdgeInsets.all(10.0),
+                ),
+                obscureText: true,
+              ),
             ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                // Implement login logic here
-                // On successful login, navigate to the main screen
-                Navigator.pushReplacementNamed(context, '/home');
-              },
-              child: Text('Login'),
+            SizedBox(height: 30,),
+            SizedBox(
+              width: double.infinity,
+              height: 50,
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  backgroundColor: WidgetStateProperty.resolveWith<Color>(
+                    (Set<WidgetState> states) {
+                      if (states.contains(WidgetState.hovered))
+                        return Colors.red.shade900; // Hover color
+                      return Colors.red; // Default color
+                    },
+                  ),
+                  foregroundColor: WidgetStateProperty.all(Colors.white),
+                  shape: WidgetStateProperty.all(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                  ),
+                ),
+                onPressed: () {
+                  // Implement login logic here
+                  // On successful login, navigate to the main screen
+                  Navigator.pushReplacementNamed(context, '/home');
+                },
+                child: Text(
+                  'Login',
+                  style: TextStyle(
+                    fontSize: 18.0,
+                  ),
+                ),
+              ),
             ),
           ],
         ),
