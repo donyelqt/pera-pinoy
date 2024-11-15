@@ -91,7 +91,7 @@ class MainScreen extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               height: 275,
               decoration: BoxDecoration(
-                  gradient: LinearGradient(
+                  gradient: const LinearGradient(
                     colors: [
                       Colors.red,
                       Colors.black,

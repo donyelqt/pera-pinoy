@@ -73,8 +73,8 @@ class HomeScreen extends StatelessWidget {
             shape: BoxShape.circle,
             gradient: RadialGradient(
               colors: [
-                Color.fromARGB(255, 255, 132, 0),
-                Color.fromARGB(255, 231, 0, 0),
+                const Color.fromARGB(255, 255, 132, 0),
+                const Color.fromARGB(255, 231, 0, 0),
                 const Color.fromARGB(255, 231, 204, 0),
               ],
               transform: const GradientRotation(pi / 4),
