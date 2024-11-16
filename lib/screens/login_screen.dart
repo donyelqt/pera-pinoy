@@ -36,7 +36,7 @@ class LoginScreen extends StatelessWidget {
                 child: TextField(
                   style: TextStyle(color: Colors.white),
                   decoration: InputDecoration(
-                    labelText: 'Username',
+                    labelText: 'Email',
                     labelStyle: TextStyle(color: Colors.white),
                     border: InputBorder.none,
                     contentPadding: EdgeInsets.all(10.0),
@@ -122,9 +122,8 @@ class LoginScreen extends StatelessWidget {
               height: 60,
               child: ElevatedButton.icon(
                 icon: Image.asset(
-                  'assets/google_logo.jpg', // Ensure you have this asset
-                  height: 12.0,
-                  width: 12.0,
+                  'assets/google.png', // Ensure you have this asset
+                  height: 30.0, // Adjusted height // Adjusted width
                 ),
                 label: Text(
                   'Sign in with Google',
@@ -133,9 +132,9 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.blue),
-                  foregroundColor: MaterialStateProperty.all(Colors.white),
-                  shape: MaterialStateProperty.all(
+                  backgroundColor: WidgetStateProperty.all(Colors.blue),
+                  foregroundColor: WidgetStateProperty.all(Colors.white),
+                  shape: WidgetStateProperty.all(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12.0),
                     ),
