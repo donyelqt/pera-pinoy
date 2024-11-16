@@ -1,6 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginScreen extends StatelessWidget {
+  final GoogleSignIn _googleSignIn = GoogleSignIn();
+
+  Future<void> _handleGoogleSignIn(BuildContext context) async {
+    try {
+      await _googleSignIn.signIn();
+      // Navigate to the main screen on successful login
+      Navigator.pushReplacementNamed(context, '/home');
+    } catch (error) {
+      print(error);
+      // Handle sign-in error
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +34,7 @@ class LoginScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8.0),
                 ),
                 child: TextField(
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     labelText: 'Username',
                     labelStyle: TextStyle(color: Colors.white),
@@ -37,7 +51,7 @@ class LoginScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8.0),
               ),
               child: TextField(
-                style: TextStyle(color: Colors.black),
+                style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                   fillColor: Colors.white,
                   labelText: 'Password',
@@ -54,15 +68,15 @@ class LoginScreen extends StatelessWidget {
               height: 60,
               child: ElevatedButton(
                 style: ButtonStyle(
-                  backgroundColor: WidgetStateProperty.resolveWith<Color>(
-                    (Set<WidgetState> states) {
-                      if (states.contains(WidgetState.hovered))
-                        return Colors.red.shade900; // Hover color
+                  backgroundColor: MaterialStateProperty.resolveWith<Color>(
+                    (Set<MaterialState> states) {
+                      if (states.contains(MaterialState.hovered))
+                        return Colors.orangeAccent; // Hover color
                       return Colors.red; // Default color
                     },
                   ),
-                  foregroundColor: WidgetStateProperty.all(Colors.white),
-                  shape: WidgetStateProperty.all(
+                  foregroundColor: MaterialStateProperty.all(Colors.white),
+                  shape: MaterialStateProperty.all(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12.0),
                     ),
@@ -79,6 +93,55 @@ class LoginScreen extends StatelessWidget {
                     fontSize: 18.0,
                   ),
                 ),
+              ),
+            ),
+            SizedBox(height: 10),
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: Divider(
+                    color: Colors.grey,
+                    thickness: 1,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                  child: Text("OR"),
+                ),
+                Expanded(
+                  child: Divider(
+                    color: Colors.grey,
+                    thickness: 1,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 10),
+            SizedBox(
+              width: double.infinity,
+              height: 60,
+              child: ElevatedButton.icon(
+                icon: Image.asset(
+                  'assets/google_logo.png', // Ensure you have this asset
+                  height: 24.0,
+                  width: 24.0,
+                ),
+                label: Text(
+                  'Sign in with Google',
+                  style: TextStyle(
+                    fontSize: 18.0,
+                  ),
+                ),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.blue),
+                  foregroundColor: MaterialStateProperty.all(Colors.white),
+                  shape: MaterialStateProperty.all(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                  ),
+                ),
+                onPressed: () => _handleGoogleSignIn(context),
               ),
             ),
           ],

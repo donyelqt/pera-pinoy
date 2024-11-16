@@ -82,7 +82,7 @@ class HomeScreen extends StatelessWidget {
           ),
           child: const Icon(
             CupertinoIcons.add_circled_solid,
-            color: Colors.white
+            color: Colors.white,
           ),
         ),
       ),
