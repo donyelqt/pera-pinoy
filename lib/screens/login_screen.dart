@@ -1,19 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_sign_in/google_sign_in.dart';
+
 
 class LoginScreen extends StatelessWidget {
-  final GoogleSignIn _googleSignIn = GoogleSignIn();
-
-  Future<void> _handleGoogleSignIn(BuildContext context) async {
-    try {
-      await _googleSignIn.signIn();
-      // Navigate to the main screen on successful login
-      Navigator.pushReplacementNamed(context, '/home');
-    } catch (error) {
-      print(error);
-      // Handle sign-in error
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -140,7 +128,11 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                onPressed: () => _handleGoogleSignIn(context),
+                onPressed: () {
+                  // Implement login logic here
+                  // On successful login, navigate to the main screen
+                  Navigator.pushReplacementNamed(context, '/home');
+                },
               ),
             ),
           ],
