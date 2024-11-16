@@ -68,15 +68,15 @@ class LoginScreen extends StatelessWidget {
               height: 60,
               child: ElevatedButton(
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.resolveWith<Color>(
-                    (Set<MaterialState> states) {
-                      if (states.contains(MaterialState.hovered))
+                  backgroundColor: WidgetStateProperty.resolveWith<Color>(
+                    (Set<WidgetState> states) {
+                      if (states.contains(WidgetState.hovered))
                         return Colors.orangeAccent; // Hover color
                       return Colors.red; // Default color
                     },
                   ),
-                  foregroundColor: MaterialStateProperty.all(Colors.white),
-                  shape: MaterialStateProperty.all(
+                  foregroundColor: WidgetStateProperty.all(Colors.white),
+                  shape: WidgetStateProperty.all(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12.0),
                     ),
@@ -122,9 +122,9 @@ class LoginScreen extends StatelessWidget {
               height: 60,
               child: ElevatedButton.icon(
                 icon: Image.asset(
-                  'assets/google_logo.png', // Ensure you have this asset
-                  height: 24.0,
-                  width: 24.0,
+                  'assets/google_logo.jpg', // Ensure you have this asset
+                  height: 12.0,
+                  width: 12.0,
                 ),
                 label: Text(
                   'Sign in with Google',
