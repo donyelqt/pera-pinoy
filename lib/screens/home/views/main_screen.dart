@@ -361,7 +361,7 @@ class MainScreen extends StatelessWidget {
                                           fontWeight: FontWeight.w400,
                                         ),
                                       ),
-                                      Text(
+                                      const Text(
                                         'Nov 11, 2024',
                                         style: TextStyle(
                                           fontSize: 16,

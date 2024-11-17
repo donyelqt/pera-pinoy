@@ -69,15 +69,15 @@ class HomeScreen extends StatelessWidget {
         child: Container(
           width: 60,
           height: 60,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             shape: BoxShape.circle,
             gradient: RadialGradient(
               colors: [
-                const Color.fromARGB(255, 255, 132, 0),
-                const Color.fromARGB(255, 231, 0, 0),
-                const Color.fromARGB(255, 231, 204, 0),
+                Color.fromARGB(255, 255, 132, 0),
+                Color.fromARGB(255, 231, 0, 0),
+                Color.fromARGB(255, 231, 204, 0),
               ],
-              transform: const GradientRotation(pi / 4),
+              transform: GradientRotation(pi / 4),
             ),
           ),
           child: const Icon(
