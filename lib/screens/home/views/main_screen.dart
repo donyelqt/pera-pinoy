@@ -354,7 +354,7 @@ class MainScreen extends StatelessWidget {
                                   Column(
                                     children: [
                                       Text(
-                                        '\₱ 50000',
+                                        '₱ 50000',
                                         style: TextStyle(
                                           fontSize: 18,
                                           color: Colors.yellow.shade700,

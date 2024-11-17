@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 
 class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +15,7 @@ class LoginScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset('assets/PeraPinoy!.png', height: 200),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             SizedBox(
               width: double.infinity,
               child: Container(
@@ -21,7 +23,7 @@ class LoginScreen extends StatelessWidget {
                   color: Colors.black38,
                   borderRadius: BorderRadius.circular(8.0),
                 ),
-                child: TextField(
+                child: const TextField(
                   style: TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     labelText: 'Email',
@@ -32,13 +34,13 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Container(
               decoration: BoxDecoration(
                 color: Colors.black38,
                 borderRadius: BorderRadius.circular(8.0),
               ),
-              child: TextField(
+              child: const TextField(
                 style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
                   fillColor: Colors.white,
@@ -50,7 +52,7 @@ class LoginScreen extends StatelessWidget {
                 obscureText: true,
               ),
             ),
-            SizedBox(height: 30,),
+            const SizedBox(height: 30,),
             SizedBox(
               width: double.infinity,
               height: 60,
@@ -58,8 +60,9 @@ class LoginScreen extends StatelessWidget {
                 style: ButtonStyle(
                   backgroundColor: WidgetStateProperty.resolveWith<Color>(
                     (Set<WidgetState> states) {
-                      if (states.contains(WidgetState.hovered))
+                      if (states.contains(WidgetState.hovered)) {
                         return Colors.orangeAccent; // Hover color
+                      }
                       return Colors.red; // Default color
                     },
                   ),
@@ -75,7 +78,7 @@ class LoginScreen extends StatelessWidget {
                   // On successful login, navigate to the main screen
                   Navigator.pushReplacementNamed(context, '/home');
                 },
-                child: Text(
+                child: const Text(
                   'Sign In',
                   style: TextStyle(
                     fontSize: 18.0,
@@ -83,8 +86,8 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
-            Row(
+            const SizedBox(height: 10),
+            const Row(
               children: <Widget>[
                 Expanded(
                   child: Divider(
@@ -93,7 +96,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                  padding: EdgeInsets.symmetric(horizontal: 10.0),
                   child: Text("OR"),
                 ),
                 Expanded(
@@ -104,7 +107,7 @@ class LoginScreen extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             SizedBox(
               width: double.infinity,
               height: 60,
@@ -113,7 +116,7 @@ class LoginScreen extends StatelessWidget {
                   'assets/google.png', // Ensure you have this asset
                   height: 30.0, // Adjusted height // Adjusted width
                 ),
-                label: Text(
+                label: const Text(
                   'Sign in with Google',
                   style: TextStyle(
                     fontSize: 18.0,
