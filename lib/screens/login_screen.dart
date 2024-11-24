@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
-
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
-
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +13,16 @@ class LoginScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset('assets/PeraPinoy!.png', height: 200),
+            const SizedBox(height: 20),
+            const Text(
+              'PeraPinoy!',
+              style: TextStyle(
+                fontSize: 50,
+                fontWeight: FontWeight.w900,
+                fontFamily: 'Poppins',
+                color: Colors.red,
+              ),
+            ),
             const SizedBox(height: 20),
             SizedBox(
               width: double.infinity,
@@ -52,7 +60,9 @@ class LoginScreen extends StatelessWidget {
                 obscureText: true,
               ),
             ),
-            const SizedBox(height: 30,),
+            const SizedBox(
+              height: 30,
+            ),
             SizedBox(
               width: double.infinity,
               height: 60,
