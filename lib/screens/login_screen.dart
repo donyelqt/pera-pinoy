@@ -23,6 +23,16 @@ class LoginScreen extends StatelessWidget {
                 color: Colors.red,
               ),
             ),
+            const SizedBox(height: 5),
+            Text(
+              'YOUR LIFE PARTNER FOR SMART FINANCES!',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+                fontFamily: 'Poppins',
+                color: Colors.black87,
+              ),
+            ),
             const SizedBox(height: 20),
             SizedBox(
               width: double.infinity,
