@@ -6,7 +6,22 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Image.asset('assets/PeraPinoy!.png', height: 50)),
+      appBar: AppBar(
+        title: Row(
+          children: [
+            Image.asset('assets/PeraPinoy!.png', height: 50),
+             const SizedBox(width: 10), 
+             const Text(
+              'PeraPinoy!',
+              style: TextStyle(
+                fontSize: 16, // Adjust font size as needed
+                fontWeight: FontWeight.bold,
+                color: Colors.red,
+              ),
+            ),// Add some space between image and text
+          ],
+        ),
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(30.0),
