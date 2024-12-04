@@ -16,6 +16,7 @@ class LoginScreen extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16, // Adjust font size as needed
                 fontWeight: FontWeight.bold,
+                fontFamily: 'Poppins',
                 color: Colors.red,
               ),
             ),// Add some space between image and text
