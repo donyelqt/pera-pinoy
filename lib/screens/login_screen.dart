@@ -41,7 +41,7 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 5),
-              Text(
+              const Text(
                 'YOUR LIFE PARTNER FOR SMART FINANCES!',
                 style: TextStyle(
                   fontSize: 16,

@@ -342,7 +342,8 @@ class MainScreen extends StatelessWidget {
                       padding: const EdgeInsets.only(bottom: 12.0),
                       child: Container(
                         decoration: BoxDecoration(
-                            color: Colors.black87,
+                            color: Colors.white,
+                            border: Border.all(color: Colors.grey.shade400),
                             borderRadius: BorderRadius.circular(25)),
                         child: Padding(
                           padding: const EdgeInsets.all(12.0),
@@ -357,7 +358,7 @@ class MainScreen extends StatelessWidget {
                                         '₱ 50000',
                                         style: TextStyle(
                                           fontSize: 18,
-                                          color: Colors.yellow.shade700,
+                                          color: Colors.yellow.shade800,
                                           fontWeight: FontWeight.w400,
                                         ),
                                       ),
@@ -365,7 +366,7 @@ class MainScreen extends StatelessWidget {
                                         'Nov 11, 2024',
                                         style: TextStyle(
                                           fontSize: 16,
-                                          color: Colors.white70,
+                                          color: Colors.black87,
                                           fontWeight: FontWeight.w400,
                                         ),
                                       ),
@@ -379,7 +380,7 @@ class MainScreen extends StatelessWidget {
                                     'Laptop',
                                     style: TextStyle(
                                       fontSize: 20,
-                                      color: Colors.white,
+                                      color: Colors.black,
                                       fontWeight: FontWeight.w600,
                                     ),
                                   ),
